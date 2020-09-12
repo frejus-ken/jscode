@@ -1,0 +1,39 @@
+body {width: 100%;}
+h1 {text-align: center;}
+.container{
+    text-align: center;
+    height: 700px;
+width: 50%;
+border: 1px solid black;
+margin-left: 25%;
+}
+img {
+    border-radius: 100%;
+    max-width: 100%;
+    height: ;
+    padding-top: 3%;
+
+}
+     #rectangle {
+        height: 200px;
+        width: 200px;
+        border: 5px solid black;
+        border-radius: 100%;
+        margin-left: 50%;
+        margin-top: 2%;
+    }
+
+    .h1 {text-align: center ;
+    font-family: sans-serif;}
+.rectangle{
+    height: 300px;
+    width: 80%;
+    margin-left: 10%;
+    border: 1px solid black;
+}
+.rectangle p{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+   
