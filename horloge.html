@@ -1,0 +1,172 @@
+
+<html>
+    <head>
+    <title>ken.com : heure exacte dans le monde entier</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    
+    
+    
+    
+    
+    <DIV ID=ejs_server_heure></div>
+    <SCRIPT LANGUAGE=JavaScript>
+    
+    ejs_server_date = new Date(0,0,0,11, 25, 03)
+    ejs_server_heu = ejs_server_date.getHours();
+    ejs_server_min = ejs_server_date.getMinutes();
+    ejs_server_sec = ejs_server_date.getSeconds();
+    
+    function ejs_server_calc()
+    {
+    if (ejs_server_sec < 10)
+        ejs_server_sec = "0"+Math.round(ejs_server_sec);
+    else if(ejs_server_sec >= 60)
+        {
+        ejs_server_sec = "00";
+        ejs_server_min++;
+        }
+    if (ejs_server_min < 10)
+        ejs_server_min = "0"+Math.round(ejs_server_min);
+    else if(ejs_server_min >= 60)
+        {
+        ejs_server_min = "00";
+        ejs_server_heu++;
+        }
+    if (ejs_server_heu < 10)
+        ejs_server_heu = "0"+Math.round(ejs_server_heu);
+    else if(ejs_server_heu >= 24)
+        {
+        ejs_server_heu = "00";
+        }
+    ejs_server_texte = ejs_server_heu + ":" + ejs_server_min + ":" + ejs_server_sec;
+    if (document.getElementById){
+        document.getElementById("heure").innerHTML=ejs_server_texte;
+        }
+    ejs_server_sec++;
+    }
+    setInterval("ejs_server_calc()", 1000);
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    <SCRIPT LANGUAGE="JavaScript">
+    
+    function changetimez()
+        {
+            document.formtimez.submit();
+        }
+        
+        
+        
+    function favoris() {
+    if ( navigator.appName != 'Microsoft Internet Explorer' )
+    { window.sidebar.addPanel("Heure.com","http://www.heure.com",""); }
+    else { window.external.AddFavorite("http://www.heure.com/","Heure.com"); } }
+    
+    </SCRIPT>
+    
+    
+    <style type="text/css">
+    <!--
+    .Style1 {font-family: Arial, Helvetica, sans-serif}
+    
+    .heure {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:72px;
+    }
+    -->
+    </style>
+    </head>
+    
+    <body>
+            <tr>
+              <td>
+              <center>
+    <br>
+    <h1 class="Style1"><a href="http://www.heure.com" style="color:#000000;text-decoration:none;">Heure</a> </h1>
+    <span class="Style1"><br>
+    <br>
+    <br>
+    <br>
+    </span>
+    <div class="heure" id="heure"></div>
+    <br>
+    <span class="Style1">[Heure du benin<!--, UTC/GMT 2:00-->]</span><br>
+    <div align="justify"><span class="Style1"><br>
+          <FONT size=3><SPAN style="FONT-SIZE: 12pt"><o:p></o:p></SPAN></FONT>
+      </span></div>
+    <p>&nbsp;</p>
+    <p><br>
+     <script type="text/javascript"><!--
+    google_ad_client = "pub-7177799137448888";
+    /* 728x90, date de création 07/03/08 */
+    google_ad_slot = "8996922708";
+    google_ad_width = 728;
+    google_ad_height = 90;
+    //-->
+    </script>
+    <script type="text/javascript"
+    src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script> 
+          </p>
+    <p><br>
+            </p>
+    <table width="100%" border="0">
+      <tr valign="middle">
+        <td><div align="left"><U><FONT face=Arial size=2><SPAN 
+    style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><a href="javascript:void(favoris());" style="color:#000000; ">Restez toujours &agrave; l&rsquo;heure&nbsp;! Sauvez Heure.com dans vos favoris&nbsp;!</a></SPAN></FONT></U><FONT face=Arial size=2><SPAN 
+    style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">&nbsp;&nbsp; </SPAN></FONT></div></td>
+        <td><div align="right"><font face=Arial size=2><span 
+    style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><u><a href="webmaster/" style="color:#000000; ">Ajoutez l&rsquo;heure atomique sur votre blog ou site&nbsp;!</a></u></span></font></div></td>
+      </tr>
+    </table>
+    <p><FONT face=Arial size=2><SPAN 
+    style="FONT-SIZE: 10pt; FONT-FAMILY: Arial"><o:p></o:p></SPAN></FONT></p>
+    <!--
+    <form name="formtimez" method="post">
+      <select name="timez" onChange="changetimez()">
+        <option>--Time Zone--</option>
+        <option value="1">Paris (+1)</option>
+        <option value="-3">Brésil (-3)</option>
+    
+      </select>
+    </form>
+    -->
+    </center>		  </td>
+              <td>
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Heure.com -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:300px;height:600px"
+                     data-ad-client="ca-pub-7177799137448888"
+                     data-ad-slot="2574891688"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+    
+              
+              </td>
+            </tr>
+          </table>
+        </div></td>
+      </tr>
+    </table>
+    
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-997152-30");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+     
+    </body>
+    
+    </html>
+    
